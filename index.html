@@ -1,34 +1,61 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cricket Score Pro</title>
+
 <style>
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   background: transparent;
-  font-family: Arial;
+  font-family: Arial, sans-serif;
 }
+
 .overlay {
   position: relative;
   width: 100%;
+  max-width: 1920px;
 }
-.overlay img {
+
+.design {
+  display: block;
   width: 100%;
+  height: auto;
 }
+
 .score {
   position: absolute;
-  top: 30px;
-  left: 30px;
+  left: 5%;
+  top: 10%;
+  padding: 12px 20px;
   color: white;
   background: #07182c;
-  padding: 15px;
-  font-size: 28px;
+  border-left: 5px solid #39f5b5;
+  font-size: clamp(16px, 3vw, 40px);
+  font-weight: bold;
 }
 </style>
 </head>
+
 <body>
-  <div class="overlay">
-    <img src="welcome.png" alt="Overlay design">
-    <div class="score">SRI LANKA 125/3</div>
+<div class="overlay">
+
+  <img
+    class="design"
+    src="welcome.png"
+    alt="Cricket overlay design"
+  >
+
+  <div class="score">
+    SRI LANKA&nbsp; 125/3
   </div>
+
+</div>
 </body>
 </html>
